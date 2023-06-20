@@ -1,0 +1,39 @@
+label {
+  font-size: 2.25rem;
+}
+
+input {
+  background-color: var(--input-background-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 262px;
+  height: 42px;
+  font-size: 1.75rem;
+}
+
+select {
+  background-color: var(--input-background-color);
+  border-radius: 5px;
+  padding-left: 10px;
+  width: 262px;
+  height: 42px;
+  font-size: 1.75rem;
+}
+
+textarea {
+  background-color: var(--input-background-color);
+  border-radius: 5px;
+  padding: 12px;
+  width: 682px;
+  height: 168px;
+  font-size: 1.75rem;
+}
+
+button {
+  width: 182px;
+  height: 72px;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}

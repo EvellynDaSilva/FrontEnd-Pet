@@ -1,0 +1,104 @@
+.animal-container {
+  display: grid;
+  grid-template-areas:
+    "title title title"
+    "image name specie"
+    "image color age"
+    "image size gender"
+    ". description description"
+    "button button button";
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+.animal__title-container {
+  grid-area: title;
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.animal__title-container > i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.animal__title {
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: normal;
+}
+
+.animal__image {
+  padding-right: 52px;
+  grid-area: image;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: name;
+}
+
+.specie-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: specie;
+}
+
+.color-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: color;
+}
+
+.age-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: age;
+}
+
+.size-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: size;
+}
+
+.gender-container {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  grid-area: gender;
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  grid-area: description;
+}
+
+.buttons-container {
+  grid-area: button;
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+}
+
+.button__update {
+  background-color: var(--action-create-color);
+}
+
+.button__delete {
+  background-color: var(--action-delete-color);
+}

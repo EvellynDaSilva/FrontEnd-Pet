@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/c0e5486155.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/generalStyle.css">
+    <link rel="stylesheet" href="./css/addPetStyle.css">
+    <title>Pet</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="./img/pet-logo.png"
+        alt="Paradise Image"
+        class="paradise__image"
+      />
+      <h1 class="paradise__title">Paraíso dos Pets</h1>
+    </header>
+    <main>
+      <div class="content">
+        <form class="animal-container">
+          <div class="animal__title-container">
+            <h2 class="animal__title">Adicionar Pet</h2>
+          </div>
+          <div class="animal__image">
+            <input
+              type="file"
+              class="photo__label"
+              id="photo"
+              @change="uploadImage"
+            />
+            <label for="photo">
+              <i class="fa-solid fa-camera"></i>
+            </label>
+          </div>
+          <div class="name-container">
+            <label class="name__label">Nome:</label>
+            <input type="text" class="name__input" />
+          </div>
+          <div class="specie-container">
+            <label class="specie__label">Espécie:</label>
+            <select class="specie__select">
+              <option class="specie__default" value="">
+                Selecione a espécie
+              </option>
+              <option class="specie__option" value="cachorro">Cachorro</option>
+              <option class="specie__option" value="gato">Cachorro</option>
+            </select>
+          </div>
+          <div class="color-container">
+            <label class="color__label">Cor:</label>
+            <select class="color__select">
+              <option class="color__default" value="">Selecione a cor</option>
+              <option class="color__option" value="marrom">Marrom</option>
+              <option class="color__option" value="preto">Preto</option>
+              <option class="color__option" value="branco">Branco</option>
+              <option class="color__option" value="outros">Outros</option>
+            </select>
+          </div>
+          <div class="age__container">
+            <label class="age__label">Idade em anos:</label>
+            <input type="number" class="age__input" />
+          </div>
+          <div class="size-container">
+            <label class="size__label">Tamanho:</label>
+            <select class="size__select">
+              <option class="size__default" value="">
+                Selecione o tamanho
+              </option>
+              <option class="size__option" value="pequeno">
+                Pequeno Porte
+              </option>
+              <option class="size__option" value="medio">Medio Porte</option>
+              <option class="size__option" value="grande">Grande Porte</option>
+            </select>
+          </div>
+          <div class="gender-container">
+            <label class="gender__label">Gênero:</label>
+            <select class="gender__select">
+              <option class="gender__default" value="">
+                Selecione o gênero
+              </option>
+              <option class="gender__option" value="masculino">
+                Masculino
+              </option>
+              <option class="gender__option" value="feminino">Feminino</option>
+            </select>
+          </div>
+          <div class="description-container">
+            <label class="description__label">Descrição:</label>
+            <textarea
+              class="description__textarea"
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <div class="buttons-container">
+            <button type="button" class="button__cancel">Cancelar</button>
+            <button type="button" class="button__add">Adicionar</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="footer__text">Copyright © 2023 | Evellyn da Silva</p>
+    </footer>
+  </body>
+</html>

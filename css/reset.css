@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Abel", sans-serif;
+  min-height: 100vh;
+}
+
+button {
+  font-family: "Abel", sans-serif;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}
+
+input {
+  border: 0;
+  font-family: "Abel", sans-serif;
+}
+
+input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  font-family: "Abel", sans-serif;
+  border: 0;
+  outline: 0;
+  resize: none;
+}
+
+select {
+  font-family: "Abel", sans-serif;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+}

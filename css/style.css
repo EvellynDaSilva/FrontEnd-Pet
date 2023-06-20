@@ -1,0 +1,43 @@
+header {
+  height: 10vh;
+  background-color: var(--background-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.paradise__image {
+  padding-left: 52px;
+}
+
+.paradise__title {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding-right: 112px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.content {
+  max-width: 1440px;
+  width: 100%;
+}
+
+footer {
+  height: 10vh;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 1.25rem;
+}

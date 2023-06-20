@@ -1,0 +1,66 @@
+.options__filter {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 52px;
+  margin-bottom: 64px;
+}
+
+.option__filter {
+  display: flex;
+  gap: 42px;
+}
+
+input[type="radio"] {
+  width: 28px;
+  height: 28px;
+}
+
+.filter__pet {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.filter__pet > i {
+  font-size: 3.25rem;
+}
+
+.option__add-pet {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 182px;
+  height: 72px;
+  background: var(--animal-background-color);
+  border-radius: 10px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.animals-container {
+  display: flex;
+  gap: 64px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-height: 55vh;
+  overflow-y: scroll;
+}
+
+.animal-container {
+  background-color: var(--animal-background-color);
+  width: 248px;
+  height: 306px;
+  border-radius: 5px;
+}
+
+.animal__link {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.animal__name {
+  font-size: 2.25rem;
+  text-align: center;
+}
